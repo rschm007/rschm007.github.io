@@ -1,3 +1,28 @@
+/* *****
+IMPORT TAILWIND CSS
+***** */ 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* *****
+STARFIELD HERO BG
+***** */
+body {
+    background: #222222;
+    margin: 0;
+    max-height: 100vh;
+    overflow: hidden;
+  }
+  
+  @keyframes twinkle {
+    0% {
+      opacity: 0.15;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.15;
+    }
+  }
