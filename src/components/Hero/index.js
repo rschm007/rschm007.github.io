@@ -1,5 +1,6 @@
 import HeroHeader from "../HeroHeader";
 import Starfield from "../Starfield";
+import CTAbutton from "../CTAbutton";
 
 const Hero = () => {
   return (
