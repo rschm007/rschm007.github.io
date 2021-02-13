@@ -21,7 +21,7 @@ const HeroHeader = () => {
             </span>
           </div>
         </h1>
-        <div className="contact block w-full mt-4">
+        <div className="contact block w-full mt-2">
         <CTAbutton
             text="My Work"
             styles="mt-5 ml-28 text-center bg-transparent py-4 px-8 text-2xl text-white uppercase font-bold border-2 border-gray-100 hover:border-pink-700 transition duration-200 ease-in-out transform hover:-translate-y-1"

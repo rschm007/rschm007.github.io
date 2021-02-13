@@ -1,6 +1,6 @@
 /* *****
 IMPORT TAILWIND CSS
-***** */ 
+***** */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,20 +9,27 @@ IMPORT TAILWIND CSS
 STARFIELD HERO BG
 ***** */
 body {
-    background: #222222;
-    margin: 0;
-    max-height: 100vh;
-    overflow: hidden;
+  background: #222222;
+  margin: 0;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0.15;
   }
-  
-  @keyframes twinkle {
-    0% {
-      opacity: 0.15;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0.15;
-    }
+  50% {
+    opacity: 1;
   }
+  100% {
+    opacity: 0.15;
+  }
+}
+
+/* *****
+CTA BUTTON GLOW
+***** */
+#root > div > div > div > header > div > div > div > button:hover {
+  box-shadow: 0 10px 100px -20px #f300b4;
+}
