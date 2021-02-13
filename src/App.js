@@ -6,11 +6,13 @@ import Nav from "./components/Nav";
 function App() {
   return (
     <div className="App">
-      <div className="flex-auto mx-auto">
-      <Nav />
+      <div className="hero mx-auto overflow-y-auto">
+        <Nav />
         <Hero />
-        <About />
       </div>
+      <section>
+        <About />
+      </section>
     </div>
   );
 }

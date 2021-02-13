@@ -3,7 +3,7 @@ import { ReactComponent as MountainsSVG } from "../../assets/imgs/mountain-svg/m
 
 const Mountains = () => {
   return (
-    <div className="mountains absolute mt-40 w-full h-full z-20">
+    <div className="mountains absolute mt-24 w-full h-full z-20">
       <MountainsSVG />
     </div>
   );

@@ -9,7 +9,7 @@ const Hero = () => {
       <Moon />
       <Mountains />
       <Starfield />
-      <header className="w-full h-screen bg-gradient-to-b from-gray-900 to-gray-700 bg-center bg-no-repeat bg-cover">
+      <header className="heroHeader w-full h-auto bg-gradient-to-b from-gray-900 to-gray-700">
         <HeroHeader />
       </header>
     </div>
