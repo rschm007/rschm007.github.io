@@ -2,8 +2,8 @@ import CTAbutton from "../CTAbutton";
 
 const HeroHeader = () => {
   return (
-    <div className="w-full h-screen flex justify-center items-center">
-      <div className="heroHeader ml-72 w-1/2 text-left z-10">
+    <div className="w-full h-screen flex justify-center items-center shadow-xl">
+      <div className="heroHeader ml-84 w-1/2 -mt-20 text-left z-10">
         <h1>
           <span className="-mt-5 ml-7 block text-gray-100 font-normal italic text-5xl mb-4">
             I am a{" "}
