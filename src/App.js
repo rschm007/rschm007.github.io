@@ -1,12 +1,13 @@
 import "./App.css";
 import Hero from "./components/Hero";
 import About from "./components/About";
-import Mountains from "./components/Mountains";
+import Nav from "./components/Nav";
 
 function App() {
   return (
     <div className="App">
       <div className="flex-auto mx-auto">
+      <Nav />
         <Hero />
         <About />
       </div>

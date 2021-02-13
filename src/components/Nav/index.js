@@ -1,16 +1,16 @@
 const Nav = () => {
-  <nav className="sticky bg-gray-900 top-0 h-3">
-    <div className="wrapper">
-      <p className="brand text-white">
-        Robert <strong>Schmahl</strong>
-      </p>
-    </div>
-    <a className="menuButton">
-        <span>
-            
-        </span>
-    </a>
-  </nav>;
+  return (
+    <nav className="sticky bg-gray-900 top-0 h-3 flex flex-between">
+      <div className="wrapper">
+          <p className="brand text-white text-left text-2xl p-5 lowercase">
+            Robert<strong>Schmahl</strong>
+          </p>
+      </div>
+      <a className="menuButton" href="#">
+        <span></span>
+      </a>
+    </nav>
+  );
 };
 
 export default Nav;
