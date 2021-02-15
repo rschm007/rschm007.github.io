@@ -7,8 +7,8 @@ import Spacer from "./components/Spacer";
 function App() {
   return (
     <div className="App">
+      <Nav />
       <div className="hero mx-auto overflow-y-auto">
-        <Nav />
         <Hero />
       </div>
       <section>
