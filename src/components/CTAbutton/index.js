@@ -1,9 +1,9 @@
 const CTAbutton = (props) => {
-    return (
-        <button className={props.styles}>
-            {props.text}
-        </button>
-    )
-}
+  return (
+    <a href={props.href}>
+      <button className={props.styles}>{props.text}</button>
+    </a>
+  );
+};
 
 export default CTAbutton;

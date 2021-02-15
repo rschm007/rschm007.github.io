@@ -6,7 +6,7 @@ IMPORT TAILWIND CSS
 @tailwind utilities;
 
 body {
-  background-color: rgba(243, 244, 246, 1.0);
+  background-color: rgba(243, 244, 246, 1);
 }
 
 /* *****
@@ -24,7 +24,7 @@ NAV & MENU BUTTON
 .menuButton span::before,
 .menuButton span::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 30px;
   height: 3px;
   background: #fafafa;
@@ -37,7 +37,7 @@ NAV & MENU BUTTON
   position: relative;
   display: block;
   top: 50%;
-  transform: translate(0,-50%);
+  transform: translate(0, -50%);
 }
 
 .menuButton span::before {
@@ -54,16 +54,16 @@ NAV & MENU BUTTON
   background: #f300b4;
 }
 
-.menuButton.active > span  {
+.menuButton.active > span {
   background: transparent;
 }
 
-.menuButton.active > span::before  {
+.menuButton.active > span::before {
   transform: rotate(-225deg);
   top: 0px;
 }
 
-.menuButton.active > span::after  {
+.menuButton.active > span::after {
   transform: rotate(225deg);
   top: 0px;
 }
@@ -108,14 +108,15 @@ MOON
 ***** */
 #root > div > div > div.hero.flex > div.moon {
   margin-left: 75%;
-  filter: drop-shadow( 3px 3px 2px rgba(255, 255, 255, 0.7));
+  filter: drop-shadow(3px 3px 2px rgba(255, 255, 255, 0.7));
 }
 
 /* *****
-ABOUT STYLES
+ABOUT SECTION STYLES
 ***** */
 .about {
   margin-top: 300px;
+  padding-bottom: 250px;
   content: "";
   background-image: url("./assets/imgs/about-bg.jpg");
   background-attachment: fixed;
@@ -130,6 +131,22 @@ ABOUT STYLES
   width: 45%;
 }
 
-#root > div > section > div > article > div.skills.flex.flex-wrap.justify-center > div > div > svg > path {
+#root
+  > div
+  > section
+  > div
+  > article
+  > div.skills.flex.flex-wrap.justify-center
+  > div
+  > div
+  > svg
+  > path {
   fill: #ff0000;
+}
+
+/* *****
+PROJECTS SECTION STYLES
+***** */
+.projects {
+  clip-path: polygon(0 0, 20% 30%, 100% 0, 100% 100%, 80% 95%, 0 100%);
 }

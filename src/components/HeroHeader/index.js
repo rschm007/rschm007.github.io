@@ -2,7 +2,10 @@ import CTAbutton from "../CTAbutton";
 
 const HeroHeader = () => {
   return (
-    <div id="header" className="w-full h-screen flex justify-center items-center shadow-xl">
+    <div
+      id="header"
+      className="w-full h-screen flex justify-center items-center shadow-xl"
+    >
       <div className="heroHeader mr-40 w-1/2 text-left z-30">
         <h1>
           <span className="-mt-5 ml-9 block text-gray-100 font-normal italic text-5xl mb-4">
@@ -22,11 +25,13 @@ const HeroHeader = () => {
           </div>
         </h1>
         <div className="contact block w-full mt-2">
-        <CTAbutton
+          <CTAbutton
+            href="#work"
             text="My Work"
             styles="mt-5 ml-28 text-center bg-transparent py-4 px-8 text-2xl text-white uppercase font-bold border-2 border-gray-100 hover:border-pink-700 transition duration-200 ease-in-out transform hover:-translate-y-1"
           />
           <CTAbutton
+            href="#contact"
             text="Get in touch"
             styles="mt-5 ml-5 text-center bg-pink-500 py-4 px-8 text-2xl text-white uppercase font-bold border-2 border-transparent hover:bg-transparent hover:border-pink-700 transition duration-200 ease-in-out transform hover:-translate-y-1"
           />

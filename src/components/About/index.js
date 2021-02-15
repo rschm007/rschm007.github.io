@@ -15,9 +15,9 @@ const styles = {
   h3: "text-3xl tracking-tight font-medium pb-7",
   h4: "text-2xl text-pink-800 tracking-tight font-medium pb-7",
   description:
-    "description bg-gray-100 opacity-80 py-7 px-10 text-center rounded-sm",
+    "description bg-gray-50 opacity-80 py-7 px-10 text-center rounded-sm",
   column:
-    "column bg-gray-100 opacity-80 py-7 px-10 text-center flex-shrink mx-5",
+    "column bg-gray-50 opacity-80 py-7 px-10 text-center flex-shrink mx-5",
   paragraph: "text-lg pb-6 leading-7 text-black",
   columnP: "text-lg pb-6 leading-7 text-black",
   icon: "w-12 h-12 my-4",
@@ -26,12 +26,7 @@ const styles = {
 const About = () => {
   return (
     <div
-      className="about flex bg-gray-100 w-full h-full pt-80 items-center"
-      //   style={{
-      //     backgroundImage: `url(${aboutBackground})`,
-      //     backgroundRepeat: "no-repeat",
-      //   }}
-    >
+      className="about flex bg-gray-50 w-full h-full pt-80 items-center">
       <article className="mx-72 z-10">
         <div className={styles.title}>
           <h2 className={styles.h2}>My name is Robert</h2>
