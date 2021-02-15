@@ -2,6 +2,7 @@ import "./App.css";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Nav from "./components/Nav";
+import Spacer from "./components/Spacer";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Hero />
       </div>
       <section>
+        {/* <Spacer styles="mt-40 h-24" /> */}
         <About />
       </section>
     </div>

@@ -6,6 +6,7 @@ const StarfieldRender = ({ width, height, stars, maxSize = 0.75, ...props }) => 
     xmlns="http://www.w3.org/2000/svg"
     style={{ position: "absolute", zIndex: 1 }}
     preserveAspectRatio="none"
+    className="starfield"
   >
     {[...Array(stars)].map(() => (
       <circle
