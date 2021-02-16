@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Nav from "./components/Nav";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -11,11 +12,14 @@ function App() {
       <div className="hero mx-auto overflow-y-auto">
         <Hero />
       </div>
-      <section>
+      <section id="about">
         <About />
       </section>
-      <section>
+      <section id="projects">
         <Projects />
+      </section>
+      <section id="contact">
+        <Contact />
       </section>
     </div>
   );

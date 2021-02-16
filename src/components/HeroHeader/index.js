@@ -24,7 +24,7 @@ const HeroHeader = () => {
             </span>
           </div>
         </h1>
-        <div className="contact block w-full mt-2">
+        <div className="buttons block w-full mt-2">
           <CTAbutton
             href="#work"
             text="My Work"
