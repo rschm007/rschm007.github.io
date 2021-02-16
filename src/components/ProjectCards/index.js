@@ -14,7 +14,7 @@ const styles = {
 
 const ProjectCard = (props) => {
   return (
-    <div className="project grid grid-cols-2 gap-2">
+    <div className="project grid grid-cols-2 gap-2 mb-10">
       <a
         class={props.classTitle}
         href={props.href}
