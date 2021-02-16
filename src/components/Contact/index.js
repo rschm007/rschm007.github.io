@@ -30,7 +30,7 @@ const Contact = (props) => {
               rel="noopener noreferrer"
             >
               <a
-                href="../../../assets/downloads/2020-Resume=RobertSchmahl.pdf"
+                href="https://github.com/rschm007/Portfolio_v3/raw/main/src/assets/downloads/2020-Resume-RobertSchmahl.pdf"
                 download="2020-Resume-RobertSchmahl.pdf"
               >
                 <FontAwesomeIcon
