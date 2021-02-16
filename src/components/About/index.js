@@ -63,9 +63,9 @@ const About = () => {
                 <li>JavaScript</li>
                 <li>Bootstrap/TailwindCSS</li>
                 <li>Node.js</li>
-                <li>mySQL</li>
+                <li>MySQL</li>
                 <li>MongoDB</li>
-                <li>Github & Bash</li>
+                <li>React</li>
               </ul>
             </div>
           </div>
