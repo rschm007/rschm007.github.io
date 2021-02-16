@@ -18,7 +18,7 @@ const styles = {
 
 const Contact = (props) => {
   return (
-    <div className="contact flex w-full h-full pt-20 -mt-28 pb-28 mb-28 px-80 justify-center pt-40 z-60">
+    <div className="contact flex w-full h-full pt-20 pb-28 mb-28 mt-0 px-80 justify-center pt-40">
       <div className="wrapper bg-black opacity-90 px-20 py-2">
         <div className={styles.title}>
           <h2 className={styles.h2}>Let's start a conversation</h2>

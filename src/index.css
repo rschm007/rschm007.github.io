@@ -148,7 +148,7 @@ ABOUT SECTION STYLES
 PROJECTS SECTION STYLES
 ***** */
 .projects {
-  clip-path: polygon(0 0, 20% 2%, 100% 0, 100% 100%, 210% 95%, 0 100%);
+  clip-path: polygon(0px 0px, 20% 2%, 100% 0px, 210% 95%, 99.64% 99.01%, 67.24% 97.16%, 1px 98.95%);
 }
 
 .projectImage img {
@@ -175,6 +175,7 @@ PROJECTS SECTION STYLES
 CONTACT SECTION STYLES
 ***** */
 #contact {
+  margin-top: -200px;
   height: 100%;
   content: "";
   background-image: url("./assets/imgs/contact-bg.jpg");
