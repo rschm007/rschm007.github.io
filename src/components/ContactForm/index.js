@@ -33,7 +33,7 @@ const ContactForm = () => {
       <CTAbutton
             href="#"
             text="Submit"
-            styles="mt-1 mb-5 ml-5 text-center bg-pink-500 py-4 px-8 text-2xl text-white uppercase font-bold border-2 border-transparent hover:bg-transparent hover:border-pink-700 transition duration-200 ease-in-out transform hover:-translate-y-1"
+            styles="mt-1 mb-7 ml-5 text-center bg-pink-500 py-4 px-8 text-2xl text-white uppercase font-bold border-2 border-transparent hover:bg-transparent hover:border-pink-700 transition duration-200 ease-in-out transform hover:-translate-y-1"
           />
     </form>
   );
