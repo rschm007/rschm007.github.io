@@ -26,7 +26,7 @@ const styles = {
 const About = () => {
   return (
     <div
-      className="about flex bg-gray-50 w-full h-full pt-80 items-center">
+      className="about flex bg-gray-50 w-full h-full pt-80 items-center" id="about">
       <article className="mx-72 z-10">
         <div className={styles.title}>
           <h2 className={styles.h2}>My name is Robert</h2>

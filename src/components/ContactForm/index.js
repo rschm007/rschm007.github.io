@@ -2,6 +2,7 @@ import React from "react";
 import emailjs from "emailjs-com";
 
 import CTAbutton from "../CTAbutton";
+import SentSpan from "../SentSpan";
 
 const styles = {
   formGroup: "form-group flex flex-wrap -mx-3 mb-6",
@@ -11,9 +12,10 @@ const styles = {
     "form-control appearance-none block w-full bg-gray-300 text-black border border-gray-500 rounded-sm py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-200",
 };
 
+// contact form send using emailJS
 const ContactForm = () => {
   // if using this component in a different project, be sure to replace ID's
-  function sendEmail(e) {
+  const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
@@ -32,6 +34,11 @@ const ContactForm = () => {
         }
       );
   }
+
+  // function to render SentSpan when submit is clicked
+  const FormSubmitConfirm = (e) => {
+    
+  } 
 
   return (
     <form id="contact-form" onSubmit={sendEmail} className="w-full max-w-lg">
