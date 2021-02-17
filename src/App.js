@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App w-full">
       <Nav />
       <div className="hero mx-auto overflow-y-auto">
         <Hero />

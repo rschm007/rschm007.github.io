@@ -11,7 +11,7 @@ import LineBreak from "../LineBreak";
 
 const styles = {
   title: "title justify-center",
-  h2: "text-5xl tracking-tight font-bold mt-7",
+  h2: "text-5xl tracking-tight font-bold mt-12",
   h3: "text-3xl tracking-tight font-medium pb-7",
   h4: "text-2xl text-pink-800 tracking-tight font-medium pb-7",
   description:
