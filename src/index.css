@@ -5,10 +5,6 @@ IMPORT TAILWIND CSS
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: rgba(243, 244, 246, 1);
-}
-
 /* *****
 NAV & MENU BUTTON
 ***** */
@@ -197,7 +193,7 @@ CONTACT SECTION STYLES
 /* *****
 MEDIA QUERIES
 ***** */
-@media (max-width: 1024px) {
+@media (max-width: 900px) {
   /* *****
   HERO
   ***** */
