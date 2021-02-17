@@ -148,7 +148,15 @@ ABOUT SECTION STYLES
 PROJECTS SECTION STYLES
 ***** */
 .projects {
-  clip-path: polygon(0px 0px, 20% 2%, 100% 0px, 210% 95%, 99.64% 99.01%, 67.24% 97.16%, 1px 98.95%);
+  clip-path: polygon(
+    0px 0px,
+    20% 2%,
+    100% 0px,
+    210% 95%,
+    99.64% 99.01%,
+    67.24% 97.16%,
+    1px 98.95%
+  );
 }
 
 .projectImage img {
@@ -160,13 +168,13 @@ PROJECTS SECTION STYLES
   filter: grayscale(100%) drop-shadow(0px 3px 2px rgba(0, 0, 0, 0.2));
   -webkit-transform: scale(1);
   transform: scale(1);
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .projectImage:hover img {
   -webkit-filter: grayscale(0);
-  filter: grayscale(0) drop-shadow(0px 3px 2px rgba(0, 0, 0, 0.2));;
+  filter: grayscale(0) drop-shadow(0px 3px 2px rgba(0, 0, 0, 0.2));
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
@@ -199,7 +207,7 @@ MEDIA QUERIES
   .moon {
     height: 12rem;
     width: 12rem;
-    margin-left: 65%!important;
+    margin-left: 65% !important;
   }
   .mountains {
     margin-top: 30vh;
@@ -214,5 +222,37 @@ MEDIA QUERIES
     margin-top: -10%;
     margin-left: 5%;
     margin-right: 5%;
+  }
+  /* *****
+  ABOUT
+  ***** */
+  .about {
+    margin-top: -4rem;
+  }
+  .about article {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  .about .skills {
+    flex-wrap: nowrap;
+  }
+  .about .skills .column {
+    width: 48%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  /* *****
+  PROJECTS
+  ***** */
+  .projects {
+    clip-path: polygon(0px 0px, 25.26% 0.57%, 100% 0px, 210% 95%, 99.64% 99.01%, 67.24% 97.16%, 1px 98.95%);
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .projects #work {
+    margin-left: 3rem;
+    margin-right: 3rem;
   }
 }
