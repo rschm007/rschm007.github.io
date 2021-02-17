@@ -185,3 +185,34 @@ CONTACT SECTION STYLES
   background-position: right center;
   position: relative;
 }
+
+/* *****
+MEDIA QUERIES
+***** */
+@media (max-width: 1024px) {
+  /* *****
+  HERO
+  ***** */
+  .hero {
+    max-height: 75vh;
+  }
+  .moon {
+    height: 12rem;
+    width: 12rem;
+    margin-left: 65%!important;
+  }
+  .mountains {
+    margin-top: 30vh;
+    max-height: 75vh;
+  }
+  .starfield {
+    height: 75vh;
+  }
+  .heroHeader {
+    max-height: 75vh;
+    width: 100%;
+    margin-top: -10%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
