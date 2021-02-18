@@ -43,6 +43,17 @@ const Projects = () => {
           repoHref="https://github.com/https-github-com-steversonTong/Recipe-Generatorf"
         />
         <ProjectCard
+          classTitle="react-employee-directory"
+          href="https://rschm007.github.io/Employee_Directory/"
+          src="https://github.com/rschm007/Portfolio_v3/blob/main/src/assets/imgs/react_emp_dir.png?raw=true"
+          icons=""
+          title="React Employee Directory"
+          // icons={`fab fa-html5`}
+          tools="Built using TailwindCSS, Axios, and React."
+          summary="A React application that displays an employee directory. The application renders sortable data tables that respond to user input. The user can search terms in the search form, or they can sort columns by ascending or descending order.."
+          repoHref="https://github.com/rschm007/Employee_Directory"
+        />
+        <ProjectCard
           classTitle="pwa-budget-tracker"
           href="https://fathomless-chamber-46101.herokuapp.com/"
           src="https://github.com/rschm007/PWA_BudgetTracker/raw/main/assets/demo_1.gif"
@@ -74,17 +85,6 @@ const Projects = () => {
           tools="Built using HTML5, CSS3, JavaScript, TailwindCSS, Node and Jest."
           summary="A CLI application that prompts the user for information about the team manager and then the team members. After going through inquirer prompts (and passing the validation tests), the app will create a HTML file that dynamically inserts each team member's information into cards."
           repoHref="https://github.com/rschm007/Team_Template_Generator"
-        />
-        <ProjectCard
-          classTitle="ecommerce-backend"
-          href="https://github.com/rschm007/E-Commerce_Back_End"
-          src="https://github.com/rschm007/Portfolio_v3/blob/main/src/assets/imgs/ECommereBackEnd_gif.gif?raw=true"
-          icons=""
-          title="eCommerce Back End"
-          // icons={`fab fa-html5`}
-          tools="Built using HTML5, JavaScript, MySQL, Node and Express."
-          summary="A working Express.js API connected to a MySQL database that allows POST, GET, DELETE, and PUT requests."
-          repoHref="https://github.com/rschm007/E-Commerce_Back_End"
         />
       </article>
     </div>
