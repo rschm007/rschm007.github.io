@@ -12,7 +12,7 @@ const styles = {
 
 const Projects = () => {
   return (
-    <div className="projects flex bg-gray-300 w-full h-full pt-20 -mt-28 pb-28 mb-28 px-80 justify-center z-10">
+    <div className="projects flex bg-gray-300 w-full h-full pt-20 -mt-28 pb-28 mb-28 px-72 items-center z-10">
       <article className="mx-32 w-full" id="work">
         <div className={styles.title}>
           <h2 className={styles.h2} id="projects">

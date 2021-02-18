@@ -31,7 +31,7 @@ const ProjectCard = (props) => {
           <h3 className={styles.h3}>{props.title}</h3>
           <h4 className={styles.h4}>{props.tools}</h4>
           <p className={styles.summary}>{props.summary}</p>
-          <div className="buttons">
+          <div className="buttons flex flex-wrap">
             <a
               className={styles.button}
               href={props.repoHref}

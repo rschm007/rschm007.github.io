@@ -6,7 +6,7 @@ const HeroHeader = () => {
       id="header"
       className="w-full h-screen flex justify-center items-center shadow-xl"
     >
-      <div className="heroHeader mr-40 w-1/2 text-left z-30">
+      <div className="heroHeader mr-40 w-1/2 text-left z-30 relative">
         <h1>
           <span className="-mt-5 ml-9 block text-gray-100 font-normal italic text-5xl mb-4">
             I am a{" "}
