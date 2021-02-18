@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 
 const styles = {
-  img: "object-cover rounded-full ",
+  img: "object-cover rounded-full mt-20",
   h3: "text-4xl uppercase text-pink-600 tracking-tight font-bold mt-7 mb-1",
   h4: "text-base tracking-tight font-light mb-1 italic",
   summary: "summary text-lg pb-6 leading-7 font-normal text-black",
