@@ -1,7 +1,7 @@
-import HeroHeader from "../HeroHeader";
-import Starfield from "../Starfield";
-import Mountains from "../Mountains";
-import Moon from "../Moon";
+import HeroHeader from "./HeroHeader";
+import Starfield from "./Starfield";
+import Mountains from "./Mountains";
+import Moon from "./Moon";
 
 const Hero = () => {
   return (
