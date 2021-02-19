@@ -1,7 +1,7 @@
 import React from "react";
 import emailjs from "emailjs-com";
 
-import CTAbutton from "../CTAbutton";
+import CTAbutton from "../../CTAbutton";
 
 const styles = {
   formGroup: "form-group flex flex-wrap -mx-3 mb-6",

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Burger from "../Burger";
-import Menu from "../Menu";
+import Burger from "./Burger";
+import Menu from "./Menu";
 
 const Nav = (props) => {
   // set state
