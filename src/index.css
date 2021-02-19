@@ -9,12 +9,29 @@ IMPORT TAILWIND CSS
 NAV & MENU BUTTON
 ***** */
 .menuButton {
-  padding-top: 2.5rem;
-  position: relative;
-  height: 22px;
+  position: absolute;
   width: 30px;
   outline: none;
+  border: none;
+  margin-left: 12rem;
+  margin-top: -2.2rem;
 }
+
+.menuButton:focus {
+  outline: none;
+  border: none;
+}
+
+/* menu button animation TODO */
+/* .menuButton:focus span {
+  opacity: 0;
+}
+.menuButton:focus span::before {
+  transform: rotate(45deg);
+}
+.menuButton:focus span::after {
+  transform: rotate(-45deg);
+} */
 
 .menuButton span,
 .menuButton span::before,
@@ -24,7 +41,6 @@ NAV & MENU BUTTON
   width: 30px;
   height: 3px;
   background: #fafafa;
-  transition: 500ms cubic-bezier(0.77, 0, 0.175, 1);
   left: 0;
   cursor: pointer;
 }
@@ -33,7 +49,6 @@ NAV & MENU BUTTON
   position: relative;
   display: block;
   top: 50%;
-  transform: translate(0, -50%);
 }
 
 .menuButton span::before {
@@ -50,25 +65,46 @@ NAV & MENU BUTTON
   background: #f300b4;
 }
 
-.menuButton.active > span {
-  background: transparent;
-}
-
-.menuButton.active > span::before {
-  transform: rotate(-225deg);
-  top: 0px;
-}
-
-.menuButton.active > span::after {
-  transform: rotate(225deg);
-  top: 0px;
-}
-
 nav .sticky {
   position: sticky;
   top: 0;
   width: 100%;
   z-index: 60;
+}
+
+.brand:hover {
+  color: #f300b4;
+}
+
+/* *****
+MENU OVERLAY 
+***** */
+#root > div > nav > div:nth-child(2) > div.true {
+  background-color: #f300b4;
+  width: 50%;
+  height: 50vh;
+  margin-top: 10vh;
+  margin-left: 25vw;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(0%);
+  opacity: 0.9;
+  box-shadow: 0 10px 100px -20px #000000;
+}
+
+#root > div > nav > div:nth-child(2) > div.false {
+  background-color: #f300b4;
+  width: 50%;
+  height: 0px;
+  margin-top: 10vh;
+  margin-left: -25vw;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-200%);
+  opacity: 0.9;
+  box-shadow: 0 10px 100px -20px #000000;
+}
+
+.false .li {
+  visibility: none;
 }
 
 /* *****
@@ -93,8 +129,9 @@ STARFIELD HERO BG
 }
 
 /* *****
-CTA BUTTON GLOW
+CTA BUTTONS
 ***** */
+
 #header > div > div > a > button:hover {
   box-shadow: 0 10px 100px -20px #f300b4;
 }
@@ -107,11 +144,16 @@ MOON
   filter: drop-shadow(3px 3px 2px rgba(255, 255, 255, 0.7));
 }
 
+#header > div > h1 {
+  margin-right: -10rem;
+  filter: drop-shadow(0px 3px 2px rgba(0, 0, 0, 0.2))
+}
+
 /* *****
 ABOUT SECTION STYLES
 ***** */
 .about {
-  margin-top: 11rem;
+  margin-top: 40rem;
   padding-bottom: 11rem;
   content: "";
   background-image: url("./assets/imgs/about-bg.jpg");
@@ -119,7 +161,7 @@ ABOUT SECTION STYLES
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: right center;
-  position: static;
+  position: relative;
   z-index: 0;
 }
 
@@ -159,7 +201,7 @@ PROJECTS SECTION STYLES
   width: 20rem;
   height: 20rem;
   overflow: hidden;
-  padding: 1rem ;
+  padding: 1rem;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%) drop-shadow(0px 3px 2px rgba(0, 0, 0, 0.2));
   -webkit-transform: scale(1);
@@ -193,6 +235,15 @@ CONTACT SECTION STYLES
 /* *****
 MEDIA QUERIES
 ***** */
+@media (max-width: 1800px) {
+  .about {
+    margin-top: 15rem;
+  }
+  .designer {
+    margin-right: -11.5rem;
+  }
+}
+
 @media (max-width: 1500px) {
   .about {
     margin-top: 7rem;
@@ -242,6 +293,7 @@ MEDIA QUERIES
     margin-top: -5rem;
   }
   .contact {
+    height: 100%;
     padding-left: 10rem;
     padding-right: 10rem;
   }
@@ -251,6 +303,9 @@ MEDIA QUERIES
   .about .column {
     width: 70%;
     margin-bottom: 2rem;
+  }
+  .designer {
+    margin-right: -12rem;
   }
 }
 
@@ -264,12 +319,19 @@ MEDIA QUERIES
     max-height: 10rem;
     max-width: 10rem;
   }
+  #header > div > h1 > div {
+    margin-top: -2.5rem;
+  }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 975px) {
+  .about {
+    margin-top: 3rem;
+  }
+
   .projects {
     padding-left: 0;
-    padding-right: 0;
+    padding-right: 4rem;
   }
 
   .projects .projectImage img {
@@ -279,11 +341,51 @@ MEDIA QUERIES
   }
 }
 
+@media (max-width: 900px) {
+  .about {
+    margin-top: 0rem;
+  }
+  .designer {
+    margin-right: 0rem;
+  }
+}
+
 @media (max-width: 875px) {
+  #welcome {
+    max-height: 100vh;
+  }
+  .mountains {
+    margin-top: 16rem;
+  }
   .heroHeader {
     margin-right: 2rem;
     margin-left: 2rem;
-    max-height: 550px;
+    max-height: 100%;
+    margin-top: 8rem;
+  }
+  .text-4xl {
+    font-size: 1.75rem;
+  }
+  .text-5xl {
+    font-size: 2.5rem;
+  }
+  .text-8xl {
+    font-size: 4.5rem;
+  }
+  #header
+    > div
+    > h1
+    > span.-mt-5.ml-36.block.text-gray-100.font-light.italic.text-4xl {
+    margin-left: 8rem;
+  }
+  #header
+    > div
+    > h1
+    > span.-mt-3.ml-14.block.text-yellow-50.font-light.italic.text-5xl.mb-4 {
+    margin-bottom: 0.75rem;
+  }
+  #header > div > h1 > div {
+    margin-top: -4.5rem;
   }
   .about .column {
     width: 90%;
@@ -310,27 +412,42 @@ MEDIA QUERIES
 }
 
 @media (max-width: 700px) {
- .heroHeader {
-  max-height: 400px;
-  margin-bottom: 8rem;
-  margin-left: 1rem;
-  margin-right: 0;
- }
- .about {
-   margin-top: -10rem;
-   padding-top: 15rem;
- }
- .about article {
-   margin-left: 6rem;
-   margin-right: 6rem;
- }
- .projects article {
-   margin-left: 6rem;
-   margin-right: 6rem;
- }
+  .heroHeader {
+    max-height: 400px;
+    margin-bottom: 8rem;
+    margin-left: 1rem;
+    margin-right: 0;
+  }
+  .about {
+    margin-top: -10rem;
+    padding-top: 15rem;
+  }
+  .about article {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+  .projects article {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 699px) {
+  .hero {
+    max-height: 100vh;
+  }
+  .mountains {
+    margin-top: 12rem;
+  }
+  .starfield {
+    max-height: 100vh;
+  }
+  .heroHeader {
+    margin-top: 9rem;
+  }
+  #header > div > h1 > div {
+    margin-top: -3.8rem;
+  }
   #root > div > div > div.hero.flex > div.moon {
     margin-left: 65%;
     max-height: 8rem;
@@ -355,10 +472,73 @@ MEDIA QUERIES
 }
 
 @media (max-width: 500px) {
+  .hero {
+    max-height: 75vh;
+  }
   .App {
     width: min-content;
   }
+  .mountains {
+    margin-top: 20rem;
+  }
   .starfield {
     width: 100%;
+    height: 75vh;
+  }
+  .heroHeader {
+    margin-top: 10rem;
+  }
+  #header
+    > div
+    > h1
+    > span.-mt-3.ml-14.block.text-yellow-50.font-light.italic.text-5xl.mb-4 {
+    margin-bottom: 1rem;
+  }
+  .designer {
+    margin-top: -2rem;
+  }
+  .about {
+    width: 100vw;
+  }
+  .about article {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .about .column {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .projects article {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #work > div.title.justify-center {
+    width: 100vw;
+  }
+  .projects article .project {
+    padding-left: 4rem;
+    padding-right: 6rem;
+    display: block;
+    grid-template-columns: none;
+    width: 100%;
+  }
+  #work > div > a {
+    display: none;
+  }
+  #contact {
+    height: 100vh;
+  }
+  #contact .contact {
+    padding: 2rem 0;
+  }
+  #contact > div > div {
+    position: absolute;
+    max-width: 85vw;
+  }
+  #root > div > footer {
+    margin-top: 0;
+    height: 150px;
+    background-color: #141414;
   }
 }

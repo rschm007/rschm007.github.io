@@ -5,11 +5,11 @@ import Moon from "../Moon";
 
 const Hero = () => {
   return (
-    <div class="hero flex" id="welcome">
+    <div className="hero flex" id="welcome">
       <Moon />
       <Mountains />
       <Starfield />
-      <header className="heroHeader w-full h-auto bg-gradient-to-b from-gray-900 to-gray-700">
+      <header className="heroHeader w-full h-auto">
         <HeroHeader />
       </header>
     </div>
