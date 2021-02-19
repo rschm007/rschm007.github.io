@@ -1,4 +1,4 @@
-import CTAbutton from "../CTAbutton";
+import CTAbutton from "../../CTAbutton";
 
 const HeroHeader = () => {
   return (
