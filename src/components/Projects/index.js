@@ -1,5 +1,5 @@
 import LineBreak from "../LineBreak";
-import ProjectCard from "../ProjectCards";
+import ProjectCard from "./ProjectCards";
 
 const styles = {
   title: "title justify-center",
