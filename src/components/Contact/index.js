@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFileDownload } from "@fortawesome/free-solid-svg-icons";
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-import ContactForm from "../ContactForm";
+import ContactForm from "./ContactForm";
 import LineBreak from "../LineBreak";
 
 const styles = {
