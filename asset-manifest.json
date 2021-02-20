@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Portfolio_v3/static/css/main.2e9c31c9.chunk.css",
+    "main.css": "/Portfolio_v3/static/css/main.23a24f9a.chunk.css",
     "main.js": "/Portfolio_v3/static/js/main.583eb85d.chunk.js",
     "main.js.map": "/Portfolio_v3/static/js/main.583eb85d.chunk.js.map",
     "runtime-main.js": "/Portfolio_v3/static/js/runtime-main.c7b4634e.js",
@@ -8,7 +8,7 @@
     "static/js/2.b187d70f.chunk.js": "/Portfolio_v3/static/js/2.b187d70f.chunk.js",
     "static/js/2.b187d70f.chunk.js.map": "/Portfolio_v3/static/js/2.b187d70f.chunk.js.map",
     "index.html": "/Portfolio_v3/index.html",
-    "static/css/main.2e9c31c9.chunk.css.map": "/Portfolio_v3/static/css/main.2e9c31c9.chunk.css.map",
+    "static/css/main.23a24f9a.chunk.css.map": "/Portfolio_v3/static/css/main.23a24f9a.chunk.css.map",
     "static/js/2.b187d70f.chunk.js.LICENSE.txt": "/Portfolio_v3/static/js/2.b187d70f.chunk.js.LICENSE.txt",
     "static/media/index.css": "/Portfolio_v3/static/media/contact-bg.b496efac.jpg",
     "static/media/moon-full.02131646.svg": "/Portfolio_v3/static/media/moon-full.02131646.svg",
@@ -17,7 +17,7 @@
   "entrypoints": [
     "static/js/runtime-main.c7b4634e.js",
     "static/js/2.b187d70f.chunk.js",
-    "static/css/main.2e9c31c9.chunk.css",
+    "static/css/main.23a24f9a.chunk.css",
     "static/js/main.583eb85d.chunk.js"
   ]
 }
