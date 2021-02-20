@@ -8,6 +8,10 @@ IMPORT TAILWIND CSS
 /* *****
 NAV & MENU BUTTON
 ***** */
+#root > div > nav > div:nth-child(1) > p {
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.2));
+}
+
 .menuButton {
   position: absolute;
   width: 30px;
@@ -15,6 +19,7 @@ NAV & MENU BUTTON
   border: none;
   margin-left: 12rem;
   margin-top: -2.2rem;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.2));
 }
 
 .menuButton:focus {
@@ -301,6 +306,9 @@ MEDIA QUERIES
   }
   .starfield {
     max-height: 100%;
+  }
+  .designer {
+    margin-right: -1rem;
   }
 }
 
@@ -693,5 +701,39 @@ MEDIA QUERIES
     margin-top: 0;
     height: 150px;
     background-color: #141414;
+  }
+}
+
+@media (max-width: 450px) {
+  #root > div > div > div.hero.flex > div.moon {
+    height: 150px;
+    width: 150px;
+    margin-left: 55%;
+  }
+  .mountains {
+    margin-top: 22rem;
+  }
+  .heroHeader {
+    margin-left: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 11.5rem;
+  }
+  .text-8xl {
+    font-size: 3rem;
+  }
+  .designer {
+    margin-left: -10rem;
+  }
+  .about {
+    margin-top: -5rem;
+  }
+  #contact {
+    background-size: 300%;
+    background-position: left center;
+    height: 110vh;
+  }
+  #contact > div > div {
+    max-width: 100vw;
   }
 }
