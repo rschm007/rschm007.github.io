@@ -1,0 +1,32 @@
+@import "../_imports.scss";
+
+/*----------------
+STARFIELD BG */
+
+.starfield {
+    background: #222222;
+    margin: 0;
+    max-height: 100%;
+}
+
+/* END STARFIELD BG
+----------------
+MENU OVERLAY */
+
+#header > div > div > a > button:hover {
+    box-shadow: 0 10px 100px -20px #f300b4;
+}
+
+/* END MENU OVERLAY
+----------------
+MOON */
+
+.moon {
+    margin-left: 75%;
+    filter: drop-shadow(3px 3px 2px rgba(255, 255, 255, 0.7));
+}
+
+#header > div > h1 {
+    margin-right: -10rem;
+    filter: drop-shadow(0px 3px 2px rgba(0, 0, 0, 0.2));
+}
