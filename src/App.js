@@ -8,21 +8,21 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <Nav />
-      <div className="hero mx-auto overflow-y-auto">
+    <div className="App flex-col">
+      {/*<Nav />*/}
+      <div className="hero">
         <Hero />
       </div>
-      <section id="about">
-        <About />
-      </section>
-      <section id="projects">
-        <Projects />
-      </section>
-      <section id="contact">
-        <Contact />
-      </section>
-      <Footer />
+      {/*<section id="about">*/}
+      {/*  <About />*/}
+      {/*</section>*/}
+      {/*<section id="projects">*/}
+      {/*  <Projects />*/}
+      {/*</section>*/}
+      {/*<section id="contact">*/}
+      {/*  <Contact />*/}
+      {/*</section>*/}
+    {/*  <Footer />*/}
     </div>
   );
 }

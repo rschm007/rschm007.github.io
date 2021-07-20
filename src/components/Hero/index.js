@@ -5,11 +5,11 @@ import Moon from "./Moon";
 
 const Hero = () => {
   return (
-    <div className="hero flex" id="welcome">
+    <div className="hero" id="welcome">
       <Moon />
       <Mountains />
       <Starfield />
-      <header className="heroHeader w-full h-auto">
+      <header className="heroHeader">
         <HeroHeader />
       </header>
     </div>

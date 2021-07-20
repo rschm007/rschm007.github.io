@@ -6,6 +6,10 @@
 @import "./styles/components/projects.scss";
 @import "./styles/components/about.scss";
 
+body {
+    margin: 0;
+}
+
 .App {
   text-align: center;
 }

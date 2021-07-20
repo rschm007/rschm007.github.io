@@ -4,7 +4,6 @@ const StarfieldRender = ({ width, height, stars, maxSize = 0.75, ...props }) => 
   <svg
     viewBox={`0 0 ${width} ${height}`}
     xmlns="http://www.w3.org/2000/svg"
-    style={{ position: "absolute", zIndex: 1 }}
     preserveAspectRatio="none"
     className="starfield"
   >

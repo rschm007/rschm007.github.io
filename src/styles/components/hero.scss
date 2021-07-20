@@ -1,30 +1,30 @@
 @import "../_imports.scss";
 
-/*----------------
-STARFIELD BG */
+.hero {
+    @include flex-direction(column);
 
-.starfield {
-    background: #222222;
-    margin: 0;
-    max-height: 100%;
+    .starfield {
+        position: absolute;
+        z-index: 0;
+        background: #222222;
+        margin: 0;
+        max-height: 100%;
+    }
+
+    .mountains {
+        z-index: 1;
+    }
+
+    .moon {
+        z-index: 2;
+        @include drop-shadow-bright;
+    }
 }
-
-/* END STARFIELD BG
-----------------
-MENU OVERLAY */
 
 #header > div > div > a > button:hover {
     @include box-shadow-pink;
 }
 
-/* END MENU OVERLAY
-----------------
-MOON */
-
-.moon {
-    margin-left: 75%;
-    @include drop-shadow-bright;
-}
 
 #header > div > h1 {
     margin-right: -10rem;
