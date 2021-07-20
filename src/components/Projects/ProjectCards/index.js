@@ -27,7 +27,7 @@ const ProjectCard = (props) => {
               rel="noopener noreferrer"
             >
               View Source
-              <FontAwesomeIcon className={styles.link} icon={faLink} />
+              <FontAwesomeIcon icon={faLink} />
             </a>
             <a
               href={props.href}
