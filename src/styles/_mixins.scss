@@ -6,11 +6,50 @@
 }
 
 /*-----------------
-div sizing */
+div sizing & flexbox */
 
-@mixin width-height($width, $height) {
-    width: $width;
-    height: $height;
+@function if-important($important) {
+    @return #{if($important, '!important', '')};
+}
+
+@mixin flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin flex-direction($direction) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-start {
+    align-items: flex-start;
+    text-align: left;
+}
+
+@mixin flex-end {
+    display: flex;
+    align-self: flex-end;
+}
+
+@mixin square-min-max($px) {
+    min-width: $px;
+    min-height: $px;
+    width: $px;
+    height: $px;
+    max-width: $px;
+    max-height: $px;
+}
+
+@mixin width-height ($width, $height, $important: false) {
+    width: $width if-important($important);
+    height: $height if-important($important);
 }
 
 /* end div sizing
@@ -27,11 +66,11 @@ borders & outlines */
 shadows */
 
 @mixin drop-shadow-dark {
-    filter: drop-shadow(0px 3px 2px rgba(0, 0, 0, 0.2))
+    filter: drop-shadow($light-shadow)
 }
 
 @mixin drop-shadow-subtle {
-        filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.2));
+        filter: drop-shadow($subtle-shadow);
 }
 
 @mixin drop-shadow-bright {
@@ -44,3 +83,25 @@ shadows */
 /* end shadows
 -----------------
 transforms, transitions & animations */
+
+@mixin transition-ease-in-out($seconds) {
+    -moz-transition: $seconds ease-in-out;
+    -webkit-transition: $seconds ease-in-out;
+    transition: $seconds ease-in-out;
+}
+
+@mixin transform($effect, $scale) {
+    -moz-transform: $effect ($scale);
+    -webkit-transform: $effect ($scale);
+    transform: $effect ($scale);
+}
+
+/* end transforms, transitions & animations
+-----------------
+filters, effects */
+
+@mixin filter($effect, $scale) {
+    -moz-filter: $effect ($scale);
+    -webkit-filter: $effect ($scale);
+    filter: $effect ($scale);
+}

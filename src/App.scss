@@ -1,7 +1,10 @@
 @import "./styles/_imports.scss";
+@import "./styles/_mediaQueries.scss";
 
 @import "./styles/components/nav.scss";
 @import "./styles/components/hero.scss";
+@import "./styles/components/projects.scss";
+@import "./styles/components/about.scss";
 
 .App {
   text-align: center;

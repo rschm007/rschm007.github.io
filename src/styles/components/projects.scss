@@ -1,0 +1,23 @@
+@import "../_imports.scss";
+
+.projects {
+    clip-path: polygon( 0px 0px, 20% 2%, 100% 0px, 210% 95%, 99.64% 99.01%, 67.24% 97.16%, 1px 98.95% );
+}
+
+.projectImage {
+    &:hover img {
+        @include filter(grayscale, 0);
+        @include filter(drop-shadow, $light-shadow);
+        @include transform(scale, 1.1);
+    }
+
+    img {
+        @include width-height(20rem, 20rem);
+        overflow: hidden;
+        padding: 1rem;
+        @include filter(grayscale, 100%);
+        @include filter(drop-shadow, $light-shadow);
+        @include transition-ease-in-out(0.3s);
+        @include transform(scale, 1);
+    }
+}
