@@ -1,2 +1,46 @@
 @import "./_variables.scss";
 @import "./_keyframes.scss";
+
+@function if-important($important) {
+    @return #{if($important, '!important', '')};
+}
+
+/*-----------------
+div sizing */
+
+@mixin width-height($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+/* end div sizing
+-----------------
+borders & outlines */
+
+@mixin no-border {
+    outline: none;
+    border: none;
+}
+
+/* end borders & outlines
+-----------------
+shadows */
+
+@mixin drop-shadow-dark {
+    filter: drop-shadow(0px 3px 2px rgba(0, 0, 0, 0.2))
+}
+
+@mixin drop-shadow-subtle {
+        filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.2));
+}
+
+@mixin drop-shadow-bright {
+    filter: drop-shadow(3px 3px 2px rgba(255, 255, 255, 0.7));
+}
+
+@mixin box-shadow-pink {
+    box-shadow: 0 10px 100px -20px $neon-pink;
+}
+/* end shadows
+-----------------
+transforms, transitions & animations */

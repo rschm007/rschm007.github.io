@@ -7,15 +7,13 @@
 .menuButton {
     position: absolute;
     width: 30px;
-    outline: none;
-    border: none;
+    @include no-border;
     margin-left: 12rem;
     margin-top: -2.2rem;
-    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.2));
+    @include drop-shadow-subtle;
 
     &:focus {
-        outline: none;
-        border: none;
+        @include no-border;
     }
 
     span {
@@ -27,8 +25,7 @@
         &::after {
             position: absolute;
             content: "";
-            width: 30px;
-            height: 3px;
+            @include width-height(30px, 3px);
             background: #fafafa;
             left: 0;
             cursor: pointer;
@@ -58,7 +55,7 @@ MENU OVERLAY */
 
 #root > div > nav > div:nth-child(2) {
     > div {
-        background-color: #f300b4;
+        background-color: $neon-pink;
         width: 50%;
         margin-top: 10vh;
         transition: transform 0.3s ease-in-out;
