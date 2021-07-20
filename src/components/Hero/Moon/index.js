@@ -3,7 +3,7 @@ import { ReactComponent as MoonFullSVG } from "../../../assets/imgs/moon-svg/moo
 
 const Moon = () => {
   return (
-      <div className="moon absolute mt-20 w-60 h-60 z-30">
+      <div className="moon">
         <MoonFullSVG />
       </div>
   );

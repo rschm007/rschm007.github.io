@@ -1,7 +1,7 @@
 const CTAbutton = (props) => {
   return (
     <a href={props.href}>
-      <button className={props.styles}>{props.text}</button>
+      <button>{props.text}</button>
     </a>
   );
 };
