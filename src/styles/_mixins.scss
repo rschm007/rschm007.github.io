@@ -52,6 +52,11 @@ div sizing & flexbox */
     height: $height if-important($important);
 }
 
+@mixin max-width-height ($width, $height, $important: false) {
+    max-width: $width if-important($important);
+    max-height: $height if-important($important);
+}
+
 /* end div sizing
 -----------------
 borders & outlines */

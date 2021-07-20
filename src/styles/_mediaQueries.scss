@@ -1,3 +1,5 @@
+@import "./_imports.scss";
+
 @media (max-width: 3300px) {
     .designer {
         margin-right: 35rem;
@@ -117,8 +119,7 @@
     }
 
     .moon {
-        width: 12rem;
-        height: 12rem;
+        @include width-height(12rem, 12rem);
     }
 
     .heroHeader {
@@ -158,14 +159,14 @@
     }
 
     .projects .projectImage img {
-        filter: grayscale(0) drop-shadow(0px 3px 2px rgba(0, 0, 0, 0.2));
+        @include filter(grayscale, 0);
+        @include filter(drop-shadow, $light-shadow);
     }
 }
 
 @media (max-width: 1175px) {
     .moon {
-        height: 15%;
-        width: 15%;
+        @include width-height(15%, 15%);
     }
 
     .heroHeader {
@@ -213,8 +214,7 @@
 
     .moon {
         margin-left: 70%;
-        max-height: 8rem;
-        max-width: 8rem;
+        @include max-width-height(8rem, 8rem);
     }
 
     .designer {
@@ -224,8 +224,7 @@
 
 @media (max-width: 975px) {
     .moon {
-        max-height: 5rem;
-        max-width: 5rem;
+        @include max-width-height(5rem, 5rem);
     }
 
     .heroHeader {
@@ -238,8 +237,7 @@
     }
 
     .projects .projectImage img {
-        width: 16rem;
-        height: 16rem;
+        @include width-height(16rem, 16rem);
         margin-top: 5rem;
     }
 }
@@ -256,8 +254,7 @@
     }
 
     .moon {
-        max-height: 12rem;
-        max-width: 12rem;
+        @include max-width-height(12rem, 12rem);
     }
 
     .mountains {
@@ -322,8 +319,7 @@
     .projects .projectImage img {
         position: absolute;
         border-radius: 0px;
-        width: 30rem;
-        height: 30rem;
+        @include width-height(30rem, 30rem);
         margin-top: 4rem;
         margin-left: -18rem;
         margin-bottom: 2rem;
@@ -392,6 +388,7 @@
 
     #root > div > div > div.hero.flex > div.moon {
         margin-left: 65%;
+        @include max-width-height(8rem, 8rem);
         max-height: 8rem;
         max-width: 8rem;
     }
@@ -438,6 +435,7 @@
 @media (max-width: 500px) {
     .moon {
         margin-left: 75%;
+        @include max-width-height(10rem, 10rem);
         max-width: 10rem;
         max-height: 10rem;
     }
