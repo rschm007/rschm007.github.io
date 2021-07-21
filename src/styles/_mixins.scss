@@ -6,6 +6,18 @@
 }
 
 /*-----------------
+text & fonts */
+
+
+@mixin typography($size, $weight, $tracking, $leading) {
+    font-size: $size;
+    font-weight: $weight;
+    letter-spacing: $tracking;
+    line-height: $leading;
+}
+
+/* end text & fonts
+-----------------
 div sizing & flexbox */
 
 @function if-important($important) {
@@ -95,10 +107,38 @@ transforms, transitions & animations */
     transition: $seconds ease-in-out;
 }
 
-@mixin transform($effect, $scale) {
-    -moz-transform: $effect ($scale);
-    -webkit-transform: $effect ($scale);
-    transform: $effect ($scale);
+// generic transform
+@mixin transform($transforms) {
+    -moz-transform: $transforms;
+    -o-transform: $transforms;
+    -ms-transform: $transforms;
+    -webkit-transform: $transforms;
+    transform: $transforms;
+}
+// rotate
+@mixin rotate ($deg) {
+    @include transform(rotate(#{$deg}deg));
+}
+
+// scale
+@mixin scale($scale) {
+    @include transform(scale($scale));
+}
+// translate
+@mixin translate ($x, $y) {
+    @include transform(translate($x, $y));
+}
+// skew
+@mixin skew ($x, $y) {
+    @include transform(skew(#{$x}deg, #{$y}deg));
+}
+//transform origin
+@mixin transform-origin ($origin) {
+    -moz-transform-origin: $origin;
+    -o-transform-origin: $origin;
+    -ms-transform-origin: $origin;
+    -webkit-transform-origin: $origin;
+    transform-origin: $origin;
 }
 
 /* end transforms, transitions & animations

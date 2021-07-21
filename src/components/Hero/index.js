@@ -9,9 +9,7 @@ const Hero = () => {
       <Moon />
       <Mountains />
       <Starfield />
-      <header className="heroHeader">
-        <HeroHeader />
-      </header>
+      <HeroHeader />
     </div>
   );
 };

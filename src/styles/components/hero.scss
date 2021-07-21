@@ -8,16 +8,69 @@
         z-index: 0;
         background: #222222;
         margin: 0;
-        max-height: 100%;
+        min-height: 70%;
+        max-height: 75%;
     }
 
     .mountains {
         z-index: 1;
+        margin-top: 1rem;
     }
 
     .moon {
         z-index: 2;
+        width: 100%;
         @include drop-shadow-bright;
+        @include flex-direction(row-reverse);
+
+        svg {
+            max-width: 15%;
+            position: absolute;
+            right: 10%;
+            margin-top: 5%;
+        }
+    }
+
+    header {
+        @include flex-direction(column);
+        position: absolute;
+        top: 13%;
+        left: 20%;
+        font-style: italic;
+        z-index: 10;
+
+        h1 {
+            @include drop-shadow-dark;
+
+            &:not(span):not(.designer) {
+                color: $off-white;
+                font-weight: 400;
+            }
+
+            strong {
+                font-size: 3.9rem;
+            }
+
+            .designer {
+                font-size: 3.5rem;
+                margin-left: -4rem;
+            }
+
+            span {
+                color: $neon-pink;
+                font-weight: 200;
+                font-size: 4rem;
+            }
+        }
+
+        .buttons {
+            button {
+
+                &:hover {
+                    @include box-shadow-pink;
+                }
+            }
+        }
     }
 }
 

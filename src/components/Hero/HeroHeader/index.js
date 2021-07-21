@@ -2,29 +2,14 @@ import CTAbutton from "../../CTAbutton";
 
 const HeroHeader = () => {
   return (
-    <div
-      id="header"
-    >
-      <div className="heroHeader">
+    <header>
         <h1>
-        <span>
-            I am{" "}
-          </span>
-          <span>
-            robert<strong>schmahl</strong>{" "}
-          </span>
-          <span>
-            developer
-          </span>
-          <div className="designer">
-            <span>
-              {" "}
-              &
-            </span>
-            <span>
-              designer
-            </span>
-          </div>
+              robert <strong>schmahl</strong>
+              <div className="designer">
+                  developer
+                <span>+</span>
+                  designer
+            </div>
         </h1>
         <div className="buttons">
           <CTAbutton
@@ -36,8 +21,7 @@ const HeroHeader = () => {
             text="Get in touch"
           />
         </div>
-      </div>
-    </div>
+      </header>
   );
 };
 

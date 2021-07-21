@@ -1,11 +1,16 @@
 {
   "ExpandedNodes": [
     "",
+    "\\public",
     "\\src",
     "\\src\\components",
+    "\\src\\components\\Hero",
+    "\\src\\components\\Hero\\HeroHeader",
+    "\\src\\components\\Hero\\Starfield",
+    "\\src\\components\\Projects\\ProjectCards",
     "\\src\\styles",
     "\\src\\styles\\components"
   ],
-  "SelectedNode": "\\public",
+  "SelectedNode": "\\src\\components\\Hero\\Starfield\\index.js",
   "PreviewInSolutionExplorer": false
 }
