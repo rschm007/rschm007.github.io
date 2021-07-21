@@ -7,10 +7,10 @@
     "\\src\\components\\Hero",
     "\\src\\components\\Hero\\HeroHeader",
     "\\src\\components\\Hero\\Starfield",
-    "\\src\\components\\Projects\\ProjectCards",
     "\\src\\styles",
-    "\\src\\styles\\components"
+    "\\src\\styles\\components",
+    "\\src\\styles\\mediaQueries"
   ],
-  "SelectedNode": "\\src\\components\\Hero\\Starfield\\index.js",
+  "SelectedNode": "\\src\\styles\\_variables.scss",
   "PreviewInSolutionExplorer": false
 }

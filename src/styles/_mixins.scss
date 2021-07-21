@@ -69,6 +69,11 @@ div sizing & flexbox */
     max-height: $height if-important($important);
 }
 
+@mixin min-max-height ($min, $max) {
+    min-height: $min;
+    max-height: $max;
+}
+
 /* end div sizing
 -----------------
 borders & outlines */

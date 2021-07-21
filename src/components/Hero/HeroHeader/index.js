@@ -4,11 +4,11 @@ const HeroHeader = () => {
   return (
     <header>
         <h1>
-              robert <strong>schmahl</strong>
-              <div className="designer">
-                  developer
-                <span>+</span>
-                  designer
+            robert <strong>schmahl</strong>
+            <div className="designer">
+                developer
+            <span>+</span>
+                designer
             </div>
         </h1>
         <div className="buttons">

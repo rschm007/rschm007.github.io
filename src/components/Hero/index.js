@@ -5,7 +5,7 @@ import Moon from "./Moon";
 
 const Hero = () => {
   return (
-    <div className="hero" id="welcome">
+    <div className="hero">
       <Moon />
       <Mountains />
       <Starfield />

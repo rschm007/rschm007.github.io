@@ -1,0 +1,46 @@
+@import "../_imports.scss";
+
+@media screen and (max-width: 600px) {
+    .hero {
+
+        .moon svg {
+            max-width: 25%;
+        }
+
+        .mountains {
+            margin-top: 30%;
+            width: 150%;
+        }
+
+        .starfield {
+            @include min-max-height(50%, 50%);
+        }
+
+        header {
+            margin-top: 15%;
+
+            h1 {
+
+                strong, .designer {
+                    font-size: $mobile-text-xxl !important;
+                }
+
+                .designer {
+                    margin-left: -1.5rem !important;
+                    display: flex;
+
+                    span {
+                        font-size: 30px !important;
+                        font-weight: 400;
+                    }
+                }
+            }
+
+            .buttons {
+                margin-left: -1.5rem;
+                @include flex-direction(column);
+                align-items: center;
+            }
+        }
+    }
+}

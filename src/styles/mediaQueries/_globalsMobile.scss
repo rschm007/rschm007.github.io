@@ -1,0 +1,24 @@
+@import "../_imports.scss";
+
+@media screen and (max-width: 600px) {
+    h1, h2, h3, h4, button {
+        font-family: $Montserrat;
+        text-transform: uppercase;
+    }
+
+    h1 {
+        @include typography($mobile-text-xl, 700, 1px, $mobile-text-xxl);
+    }
+
+    button {
+        margin: 0.25rem;
+        padding: 0.5rem 1.25rem;
+        @include typography($mobile-text-default, 400, 1px, $mobile-text-default);
+
+        &:hover {
+            background-color: $neon-pink;
+            @include box-shadow-pink;
+            @include translate(0, -0.25rem);
+        }
+    }
+}
