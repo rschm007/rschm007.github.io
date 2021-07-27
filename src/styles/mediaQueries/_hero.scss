@@ -1,15 +1,48 @@
 @import "../_imports.scss";
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1199px) {
+    .mountains {
+        margin-top: 30%;
+    }
+}
+
+@media screen and (max-width: 799px) {
     .hero {
+        header {
+            * {
+                overflow-wrap: break-word;
+            }
+
+            h1 {
+                max-width: 400px;
+
+                .designer {
+                    max-width: 370px;
+                    margin-left: unset;
+                }
+            }
+        }
 
         .moon svg {
             max-width: 25%;
         }
 
         .mountains {
+            margin-top: 40%;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hero {
+
+        .moon svg {
+            max-width: 20%;
+        }
+
+        .mountains {
             margin-top: 30%;
-            width: 150%;
+            width: 100%;
         }
 
         .starfield {
@@ -17,7 +50,8 @@
         }
 
         header {
-            margin-top: 15%;
+            margin-top: 5%;
+            left: 17%;
 
             h1 {
 
