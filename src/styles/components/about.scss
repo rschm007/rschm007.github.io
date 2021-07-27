@@ -1,6 +1,9 @@
+@import "../_imports.scss";
+
 .about {
-    margin-top: 40rem;
-    padding-bottom: 11rem;
+    @include flex-direction(column);
+
+
     content: "";
     background-image: url("../../assets/imgs/about-bg.jpg");
     background-attachment: fixed;
@@ -9,12 +12,4 @@
     background-position: right center;
     position: relative;
     z-index: 0;
-
-    .column {
-        width: 45%;
-    }
-}
-
-#root > div > section > div > article > div.skills.flex.flex-wrap.justify-center > div > div > svg > path {
-    fill: #ff0000;
 }

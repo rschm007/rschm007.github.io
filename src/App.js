@@ -10,12 +10,12 @@ function App() {
   return (
     <div className="App flex-col">
       {/*<Nav />*/}
-      <div className="hero">
+      <section className="hero">
         <Hero />
-      </div>
-      {/*<section id="about">*/}
-      {/*  <About />*/}
-      {/*</section>*/}
+        </section>
+        <section className="about">
+        <About />
+      </section>
       {/*<section id="projects">*/}
       {/*  <Projects />*/}
       {/*</section>*/}
