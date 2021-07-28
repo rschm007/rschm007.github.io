@@ -1,16 +1,14 @@
 {
   "ExpandedNodes": [
     "",
-    "\\public",
     "\\src",
     "\\src\\assets",
     "\\src\\components",
-    "\\src\\components\\About",
     "\\src\\components\\Hero",
+    "\\src\\components\\Hero\\HeroHeader",
     "\\src\\styles",
-    "\\src\\styles\\components",
     "\\src\\styles\\mediaQueries"
   ],
-  "SelectedNode": "\\src\\styles\\components\\hero.scss",
+  "SelectedNode": "\\src\\components\\Hero\\HeroHeader\\index.js",
   "PreviewInSolutionExplorer": false
 }

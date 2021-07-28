@@ -11,14 +11,18 @@ const HeroHeader = () => {
                 designer
             </div>
         </h1>
-        <div className="buttons">
+          <div className="buttons">
+            <CTAbutton
+                href="/about"
+                text="About Me"
+            />
+            <CTAbutton
+                href="/work"
+                text="My Work"
+            />
           <CTAbutton
-            href="#work"
-            text="My Work"
-          />
-          <CTAbutton
-            href="#contact"
-            text="Get in touch"
+            href="/contact"
+            text="Get in Touch"
           />
         </div>
       </header>
