@@ -9,22 +9,11 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div className="App flex-col">
-      {/*<Nav />*/}
       <section className="hero">
-        <Hero />
-        </section>
-        <section className="about">
-        <About />
+            <Hero />
       </section>
-      {/*<section id="projects">*/}
-      {/*  <Projects />*/}
-      {/*</section>*/}
-      {/*<section id="contact">*/}
-      {/*  <Contact />*/}
-      {/*</section>*/}
-    {/*  <Footer />*/}
     </div>
   );
-}
+}   
 
 export default App;

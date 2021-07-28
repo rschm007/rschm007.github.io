@@ -3,14 +3,14 @@
     "",
     "\\public",
     "\\src",
+    "\\src\\assets",
     "\\src\\components",
+    "\\src\\components\\About",
     "\\src\\components\\Hero",
-    "\\src\\components\\Hero\\HeroHeader",
-    "\\src\\components\\Hero\\Starfield",
     "\\src\\styles",
     "\\src\\styles\\components",
     "\\src\\styles\\mediaQueries"
   ],
-  "SelectedNode": "\\src\\styles\\_globals.scss",
+  "SelectedNode": "\\src\\styles\\components\\hero.scss",
   "PreviewInSolutionExplorer": false
 }
